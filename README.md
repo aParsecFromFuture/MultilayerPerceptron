@@ -55,6 +55,10 @@ It saves training information in a csv file named as "record.csv". The file has 
 
 ![alt text](github%20resource/app_verbose.gif)
 
+## Flowchart
+
+![alt text](github%20resource/app_flowchart.png)
+
 ## Report
 
 ### Data shuffling
