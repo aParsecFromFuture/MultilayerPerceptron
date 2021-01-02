@@ -55,12 +55,7 @@ It saves training information in a csv file named as "record.csv". The file has 
 
 ![alt text](github%20resource/app_verbose.gif)
 
-Error (loss) is calculated as sum of the sample's errors.
-
-![equation](http://www.sciweavers.org/tex2img.php?eq=error%3D%5Csum_%7Bi%7D%5E%7Bn%7D%20L%28x_%7Bi%7D%2C%20y_%7Bi%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
-
 ## Report
-
 
 ### Data shuffling
 
@@ -104,7 +99,7 @@ As you see the new algorithm is far better.
 
 #### Momentum optimization
 
-The momentum is a method for optimize the training phase. It has one parameter called "beta". I found that the best value for the beta parameter is 0.99 for my neural network. You can see my tests below. Every line represents mean of 10 tests.
+The momentum is a method for optimize the training phase. It has one parameter called "beta". I found that the best value for the beta parameter is 0.99 for my neural network. You can see my tests below. Every line represents mean of 10 tests and the error value is the sum of the error per samples.
 
 ![alt text](github%20resource/app_graph_momentum.png)
 
