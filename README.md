@@ -97,15 +97,15 @@ As you see the new algorithm is far better.
 
 ![alt text](github%20resource/app_graph_shuffle.png)
 
-#### Momentum optimization
+### Momentum optimization
 
-The momentum is a method for optimize the training phase. It has one parameter called "beta". I found that the best value for the beta parameter is 0.99 for my neural network. You can see my tests below. Every line represents mean of 10 tests and the error value is the sum of the error per samples.
+The momentum is a method for optimize the training phase. It has one parameter called "beta". I found that the best value for the beta parameter is 0.99 for my neural network. You can see my tests below. Every line represents mean of 10 tests.
 
 ![alt text](github%20resource/app_graph_momentum.png)
 
-#### Activation functions
+### Activation functions
 
-I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. I don't know why.
+I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. The error values are the sum of the errors per epoch.
 
 ##### For 2 hidden layers [64, 32]
 
