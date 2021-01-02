@@ -87,6 +87,18 @@ for i in sample count
 end
 ```
 
-Let's consider a sample from the dataset. What is the probability that the data remain unshuffled after the shuffling phase.
+Let's consider a sample from the dataset. What is the probability that the data remain unshuffled after the shuffling phase?
 
-For old algorithm
+For the old algorithm:
+
+![alt text](github%20resource/app_random_shuffle.svg)
+
+For the new algorithm:
+
+![alt text](github%20resource/app_iterative_shuffle.svg)
+
+
+As you see the new algorithm is far better.
+
+![alt text](github%20resource/app_graph_shuffle.png)
+
