@@ -1,6 +1,8 @@
 # DeepLearning
 Fully connected artificial neural network simulation project.
 
+![alt text](github resource/app_main.png)
+
 * Supported methods
   * Stochastic gradient descent
   * Mini-batch gradient
