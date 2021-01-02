@@ -3,6 +3,9 @@ Fully connected artificial neural network simulation project.
 
 ![alt text](github%20resource/app_main.png)
 
+## Features
+
+* Single/Multi layer support
 * Supported methods
   * Stochastic gradient descent
   * Mini-batch gradient
@@ -20,10 +23,9 @@ Fully connected artificial neural network simulation project.
   * Momentum
 * Supported normalization and standardization methods
   * Z-score normalization
-* Single/Multi layer support
-* Output layer activation functions
+* Supported output layer activation functions
   * Softmax function
-* Loss functions
+* Supported loss functions
   * Cross-entropy
 
 Error (loss) is calculated as sum of the sample's errors.
