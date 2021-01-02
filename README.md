@@ -48,6 +48,12 @@ There are 2 training mod, classical training and animated training. The animated
 
 ![alt text](github%20resource/app_animation.gif)
 
+### Verbose
+
+It saves training information in a csv file named as "record.csv". The file has two columns named as "epoch" and "error". The csv file can be examined via external sources like pandas, plotly etc.
+
+![alt text](github%20resource/app_verbose.gif)
+
 Error (loss) is calculated as sum of the sample's errors.
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=error%3D%5Csum_%7Bi%7D%5E%7Bn%7D%20L%28x_%7Bi%7D%2C%20y_%7Bi%7D%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
