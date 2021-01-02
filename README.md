@@ -1,6 +1,8 @@
 # DeepLearning
 Fully connected artificial neural network simulation project.
 
+Take a look at the [flowchart](github%20resource/app_flowchart.png).
+
 ![alt text](github%20resource/app_main.png)
 
 ## Features
