@@ -102,3 +102,25 @@ As you see the new algorithm is far better.
 
 ![alt text](github%20resource/app_graph_shuffle.png)
 
+#### Momentum optimization
+
+The momentum is a method for optimize the training phase. It has one parameter called "beta". I found that the best value for the beta parameter is 0.99 for my neural network. You can see my tests below. Every line represents mean of 10 tests.
+
+![alt text](github%20resource/app_graph_momentum.png)
+
+#### Activation functions
+
+I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. I don't know why.
+
+##### For 2 hidden layers [64, 32]
+
+![alt text](github%20resource/app_graph_activation.png)
+
+![alt text](github%20resource/app_graph_activation_time.png)
+
+##### For 3 hidden layers [128, 64, 32]
+
+![alt text](github%20resource/app_graph_activation2.png)
+
+![alt text](github%20resource/app_graph_activation_time2.png)
+
