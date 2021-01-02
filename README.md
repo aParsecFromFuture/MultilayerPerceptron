@@ -30,9 +30,17 @@ Fully connected artificial neural network simulation project.
 
 ## Guide
 
+### The weights
+
 When you train the network again and again, it will continue where it left off. You can set the weights randomly and lost the information with clear weight button.
 
 ![alt text](github%20resource/app_weight.gif)
+
+### Continuous color
+
+You can find some visually useful stuffs in the view tab. The continuous color option is not an interpolation, it's the probability map that softmax function produce.
+
+![alt text](github%20resource/app_color.gif)
 
 Error (loss) is calculated as sum of the sample's errors.
 
