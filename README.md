@@ -47,7 +47,7 @@ You can find some visually useful stuffs in the view tab. The continuous color o
 
 ### Animated training
 
-There are 2 training mod, classical training and animated training. The animated training cuts the epochs into 10 equal pieces and keeps the visual output of every piece. When the training done, it will show the 10 outputs one after the other with 0.5 seconds interval.
+There are 2 training mod, classical training and animated training. The animated training cuts the epochs into 10 equal pieces and keeps the visual output of every piece. When the training is done, it will show the 10 outputs one after the other with 0.25 seconds interval.
 
 ![alt text](github%20resource/app_animation.gif)
 
@@ -107,7 +107,7 @@ The momentum is a method for optimize the training phase. It has one parameter c
 
 ### Activation functions
 
-I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. The error values are the sum of the errors per epoch.
+I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. The error values calculated as the sum of the errors per epoch. The "random.csv" dataset is used for the tests. 
 
 ##### For 2 hidden layers [64, 32]
 
@@ -121,3 +121,6 @@ I added sinus function just for curiosity. I wasn't expecting even the neural ne
 
 ![alt text](github%20resource/app_graph_activation_time2.png)
 
+### Note
+
+There is no batch normalization in the intermediate layers. If you try to train a multi layer network with RELU, Leaky RELU or ELU the program might exceed maximum float number limit and give nan values. It's because of the softmax function that uses exponential terms which is easy to grow so fast.
