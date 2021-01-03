@@ -107,7 +107,7 @@ The momentum is a method for optimize the training phase. It has one parameter c
 
 ### Activation functions
 
-I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. The error values are the sum of the errors per epoch.
+I added sinus function just for curiosity. I wasn't expecting even the neural network trained some way. Ironically it did one of the best scores. The error values calculated as the sum of the errors per epoch. The "random.csv" dataset is used for the tests. 
 
 ##### For 2 hidden layers [64, 32]
 
