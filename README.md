@@ -47,7 +47,7 @@ You can find some visually useful stuffs in the view tab. The continuous color o
 
 ### Animated training
 
-There are 2 training mod, classical training and animated training. The animated training cuts the epochs into 10 equal pieces and keeps the visual output of every piece. When the training done, it will show the 10 outputs one after the other with 0.5 seconds interval.
+There are 2 training mod, classical training and animated training. The animated training cuts the epochs into 10 equal pieces and keeps the visual output of every piece. When the training is done, it will show the 10 outputs one after the other with 0.25 seconds interval.
 
 ![alt text](github%20resource/app_animation.gif)
 
