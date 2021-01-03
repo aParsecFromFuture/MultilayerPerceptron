@@ -742,7 +742,10 @@ namespace CppCLRWinformsProjekt {
 				GRID_CATEGORY
 			);
 
-			delete[] normalized_data, normalized_grid_data, mean, variance;
+			delete[] normalized_data;
+			delete[] normalized_grid_data;
+			delete[] mean;
+			delete[] variance;
 			pictureBox1->Refresh();
 		}
 	}
@@ -855,7 +858,7 @@ namespace CppCLRWinformsProjekt {
 		const float* sample;
 		float max;
 		float color[3] = { 0.0f, 0.0f, 0.0f };
-		float colors[7][3] = {
+		const float colors[7][3] = {
 			{255.0f, 0.0f, 0.0f},
 			{0.0f, 0.0f, 255.0f},
 			{0.0f, 255.0f, 0.0f},
@@ -877,7 +880,7 @@ namespace CppCLRWinformsProjekt {
 				sample = &GRID_DATA[i * INPUT_COUNT];
 				x1 = sample[0] + (pictureBox1->Width >> 1);
 				x2 = (pictureBox1->Height >> 1) - sample[1];
-				Drawing::Rectangle pixel = Drawing::Rectangle(x1 - (rect_width * 0.5f), x2 - (rect_height * 0.5f), rect_width, rect_height);
+				Drawing::Rectangle pixel = Drawing::Rectangle((int)(x1 - (rect_width * 0.5f)), (int)(x2 - (rect_height * 0.5f)), (int)rect_width, (int)rect_height);
 
 				max = 0.0f;
 				max_category = -1;
@@ -933,8 +936,8 @@ namespace CppCLRWinformsProjekt {
 				sample = &DATASET[INPUT_COUNT * i];
 				pen->Color = color_of(CATEGORY[i]);
 
-				x1 = (int)(sample[0] + (pictureBox1->Width >> 1));
-				x2 = (int)((pictureBox1->Height >> 1) - sample[1]);
+				x1 = sample[0] + (pictureBox1->Width >> 1);
+				x2 = (pictureBox1->Height >> 1) - sample[1];
 
 				e->Graphics->DrawLine(pen, x1, x2 - 4, x1, x2 + 4);
 				e->Graphics->DrawLine(pen, x1 - 4, x2, x1 + 4, x2);
@@ -1209,7 +1212,11 @@ namespace CppCLRWinformsProjekt {
 			end = std::chrono::steady_clock::now();
 			errorValueLabel->Text = "error: " + Convert::ToString(error);
 			label9->Text = "time: " + Convert::ToString(std::chrono::duration_cast<std::chrono::milliseconds>(end - begin).count() * 0.001f) + "s";
-			delete[] normalized_data, normalized_grid_data, mean, variance, frames;
+			delete[] normalized_data;
+			delete[] normalized_grid_data;
+			delete[] mean;
+			delete[] variance;
+			delete[] frames;
 		}
 	}
 

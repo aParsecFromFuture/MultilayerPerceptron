@@ -200,7 +200,11 @@ float train(
     for (i = 0; i < layer_count - 1; i++)
         delete[] velocity[i];
 
-    delete[] shuffle, input, output, error_term, velocity;
+    delete[] shuffle;
+    delete[] input;
+    delete[] output;
+    delete[] error_term;
+    delete[] velocity;
     return total_error;
 }
 
