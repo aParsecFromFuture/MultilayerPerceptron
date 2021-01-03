@@ -846,6 +846,10 @@ namespace CppCLRWinformsProjekt {
 
 				SAMPLE_COUNT--;
 			}
+
+			if (comboBox2->GetItemText(comboBox2->SelectedItem) == "All")
+				BATCH_SIZE = SAMPLE_COUNT;
+
 			pictureBox1->Refresh();
 		}
 	}
