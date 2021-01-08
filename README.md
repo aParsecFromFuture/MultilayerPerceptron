@@ -124,3 +124,8 @@ I added sinus function just for curiosity. I wasn't expecting even the neural ne
 ### Note
 
 There is no batch normalization in the intermediate layers. If you try to train a multi layer network with RELU, Leaky RELU or ELU the program might exceed maximum float number limit and give nan values. It's because of the softmax function that uses exponential terms which is easy to grow so fast.
+
+### References
+
+* https://en.wikipedia.org/wiki/Backpropagation
+* https://stats.stackexchange.com/questions/235528/backpropagation-with-softmax-cross-entropy
