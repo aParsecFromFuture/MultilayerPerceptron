@@ -41,7 +41,7 @@ When you train the network again and again, it will continue where it left off. 
 
 ### Continuous color
 
-You can find some visually useful stuffs in the view tab. The continuous color option is not an interpolation, it's the probability map that softmax function produce.
+You can find some visually useful stuff in the view tab. The continuous color option is not an interpolation, it's the probability map that softmax function produce.
 
 ![alt text](github%20resource/app_color.gif)
 
