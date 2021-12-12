@@ -1,4 +1,4 @@
-# DeepLearning
+# MultiLayer Perceptron
 Fully connected artificial neural network simulation project.
 
 I highly recommend you to take a look at the [flowchart](github%20resource/app_flowchart.png) before use the program.
